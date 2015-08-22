@@ -2,11 +2,12 @@
 layout: post
 title: Economic Concerns over the Bitcoin-XT Hard Fork
 ---
-### A Response to“Why Bitcoin is Forking”
+# Economic Concerns over the Bitcoin-XT Hard Fork
+### A Response to“[Why Bitcoin is Forking]()”
 
 Everyone involved in the bitcoin community, whether they hold half a bitcoin or a thousand wants to see bitcoin grow in users and in value. No one is debating the desire to advance, we’re debating exactly how the advancement should be achieved. If you consider bitcoin a legitimate currency, you are necessarily accepting a broader definition of money that has ever existed before. Because Bitcoin is not only a store of value, it’s a digital payment system.
 
-> “Fundamentally this question exposes ideological differences between people interested in Bitcoin. Is Bitcoin more of a digital gold or is it more of a competitor to Square?” — Gavin Andresen
+> “Fundamentally this question exposes ideological differences between people interested in Bitcoin. Is Bitcoin > more of a digital gold or is it more of a competitor to Square?” — Gavin Andresen
 
 For those who value bitcoin as a payment processor
 removing or expanding the block size limit lets the ability of the technology freely meet the demands of the market.
@@ -28,7 +29,7 @@ Although common in bitcoin scalability discussions, the comparisons to Visa are 
 
 And where it is mentioned on the BitcoinXT Software Batches page, the doubling effect is thoughtfully framed next to the word “smoothly”.
 
-“After the switch the max block size limit smoothly increases, doubling every two years.”
+> “After the switch the max block size limit smoothly increases, doubling every two years.”
 
 Stated without any justification as to why this approach is chosen over others, and why he thinks it will happens smoothly. This sets the theme for Herns use of adjectives over market data. If the goal is to get 75% of hashing power in line with this choice, more explanation is needed.
 
