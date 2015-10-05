@@ -14,7 +14,7 @@ Web-of-trust models, applied to social media have done quite well. Twitter has b
 PGP has four levels of trust that the user can assign to another users' public key: unknown, marginal, full, and ultimate. But since the trust rating a user gives to public keys in their network is not publicly available to everyone else, reputation in signing keys is limited to a binary confirmation of signed or not signed once its on the server. Ideally, the user should have the ability to set the degree to which people could specify their trust. Who can rate me, and how specific can they be? A more robust reputation system would include the ability to endorse a person after a mutual signing of keys:
 
     "This is the same Alice I've known since 1999, when we started college together. 
-    We worked on several projects together since then. She has read her fingerprint to me in person."
+    She has read her fingerprint to me in person."
     [expand for the full signed statement]
     signed by g0449... twitter/malgorithms, github/malgorithms, etc.
 
@@ -23,7 +23,7 @@ Everything about security comes down to trust. How well can I trust that this pu
 
     // ♥ keybase id kidblondie
     ✔ public key fingerprint: 8A3D DB0E 024E 98A5 4C72 C204 E565 3818 E15F DC6E
-    ✔ "anarchoass" on twitter: https://twitter.com/anarchoass/status/589536234466246657
+    ✔ "anarchoass" on twitter: https://twitter.com/anarchoass/status/5895362344...
     ✔ "kiaraRobles" on github: https://gist.github.com/6f5e17b8d03cbabec21d
 
 ##### 3. Decentralization
