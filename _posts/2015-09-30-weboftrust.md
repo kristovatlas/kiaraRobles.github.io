@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web Of Trust
+title: Innovation Thru Diversity in Re-Booting the Web Of Trust
 ---
 # Innovation Thru Diversity in Re-Booting the Web Of Trust
 
