@@ -7,8 +7,6 @@ title: RSA Encryption With Primes
 
 Security is about layers of difficulty. Nothing is full proof. But some methods of encryption have more layers of difficulty than others. Before computers, simply shifting the characters in the alphabet over some spaces was sufficient to stump most prying eyes. This is known as the Caesar cipher method, its implementation on in most computer programing languages uses the modulus operator to shifts the message over by a factor of a key and rotates around the alphabet in ASCII values. 
 
-![](/images/cy.jpg)
-
 You can think of modulus as an operator that counts for a given base (as in counting in base 12 instead of 10), the 26 letters in the alphabet requires counting in base 26.
 
         NSUInteger key = 5;
@@ -23,11 +21,14 @@ If it seems like shifting letters in the alphabet is simple, consider that it's 
 
 ##### Symmetric Encryption
 Both the Enigma machine and the Caesar cipher method are implementations of symmetric encryption. Meaning that the same key is used for both encryption and decryption. This is ideal for documents that you're both encrypting and decrypting. But for messages being sent, the issue of sending the key securely with the message is problematic, and subject to a mand in the middle attack.
+
 ![](/images/skey.jpg)
 
 ##### Asymmetric Encryption
 Asymmetric Encryption means never having to send a decryption key.
+
 ![](/images/pkey.jpg)
+
 If Caesar wants to send a message to Alice, he would use her public key for encryption and she would use her private key for decryption.
 
 ##### A Simple Implementation of RSA encryption:
@@ -50,7 +51,9 @@ And what's called the Tolent is calculated by:
     NSUInteger totient = (privateKeyValueP - 1) * (privateKeyValueQ - 1);
 
 ##### Why prime Numbers?
+
 ![](/images/primeComposites.jpg)
+
 Prime numbers are positive integers have no positive factors other than 1 and itself. This is useful because numbers that have no prime factors have a multiplicative inverse. 
 
 ##### Multiplicative Inverse
@@ -64,7 +67,7 @@ The RSA method has a similar mathematical formula for both encryption and decryp
 
 The cyphertext C, is found by:
 
-![](/images/equn6786.png)
+![](http://i228.photobucket.com/albums/ee281/blondie420_photo/eqn6786_zpscolxphxf.png)
 
     NSUInteger plaintext = 35;
     
@@ -92,7 +95,7 @@ Solving for d where, ed = 1 mod PQ
 
 Decrypting the message with d is simplified to:
 
-![](/images/equn6785.png)
+![](http://i228.photobucket.com/albums/ee281/blondie420_photo/eqn6786%201_zpszxkseyi6.png)
 
     // This algorithm iterates, C to the power of i, when i is doubled each time, until M =  C^d (mod PQ) 
     NSUInteger ciphertextPow = 0;
@@ -117,6 +120,7 @@ Decrypting the message with d is simplified to:
     // ciphertextPow data type changed to accommodate for big numbers
 
 The result of these numbers multiplied by the mod of the public key returns the original message number.
+
 ![](http://imgur.com/r5LF1Xy.png)
 
 This method of using the public key is the pair {e,n} and the private key as the pair {d,n} works for encryption because factoring large numbers is incredibly difficult.
