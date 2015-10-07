@@ -52,7 +52,7 @@ And what's called the Tolent is calculated by:
 
 ##### Why prime Numbers?
 
-![](/images/primeComposites.jpg)
+![](http://i.imgur.com/TTj31qb.jpg)
 
 Prime numbers are positive integers have no positive factors other than 1 and itself. This is useful because numbers that have no prime factors have a multiplicative inverse. 
 
@@ -81,7 +81,8 @@ Likewise the decryption is found by:
 
 Solving for d where, ed = 1 mod PQ 
 
-    // This algorithm iterates while ed is less than the totient, and saves the value of d when both sides of the equation are equal
+    // This algorithm iterates while ed is less than the totient, 
+    // and saves the value of d when both sides of the equation are equal
     NSUInteger ed = 1;
     NSUInteger d = 0;
     NSUInteger i = 1;
@@ -97,7 +98,8 @@ Decrypting the message with d is simplified to:
 
 ![](http://i228.photobucket.com/albums/ee281/blondie420_photo/eqn6786%201_zpszxkseyi6.png)
 
-    // This algorithm iterates, C to the power of i, when i is doubled each time, until M =  C^d (mod PQ) 
+    // This algorithm iterates, C to the power of i, 
+    // when i is doubled each time, until M =  C^d (mod PQ) 
     NSUInteger ciphertextPow = 0;
 	for (NSUInteger i = 2; i < ciphertext; i++){
 		i--;
@@ -125,7 +127,7 @@ The result of these numbers multiplied by the mod of the public key returns the 
 
 This method of using the public key is the pair {e,n} and the private key as the pair {d,n} works for encryption because factoring large numbers is incredibly difficult.
 
-![](/images/producttree.png)
+![](http://i.imgur.com/tdGYevy.png?1)
 
 To compute a product of all numbers N=N1,N2,Nm in a 4096 bit keys and would require such an unbelievable about of computing power no one has cracked it yet.
 
