@@ -7,7 +7,7 @@ title: RSA Encryption With Primes
 
 Security is about layers of difficulty. Nothing is full proof. But some methods of encryption have more layers of difficulty than others. Before computers, simply shifting the characters in the alphabet over some spaces was sufficient to stump most prying eyes. This is known as the Caesar cipher method, its implementation on in most computer programing languages uses the modulus operator to shifts the message over by a factor of a key and rotates around the alphabet in ASCII values. 
 
-![](https://camo.githubusercontent.com/889b8e5977ac765377c88b2993c1e807393224e9/687474703a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f656e2f372f37352f436165736172332e706e67)
+![](https://camo.githubusercontent.com/889b8e5977ac765377c88b2993c1e807393224e9/687474703a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f656e2f372f37352f436165736172332e706e67=620x)
 
 You can think of modulus as an operator that counts for a given base (as in counting in base 12 instead of 10), the 26 letters in the alphabet requires counting in base 26.
 
@@ -23,11 +23,11 @@ If it seems like shifting letters in the alphabet is simple, consider that it's 
 
 ##### Symmetric Encryption
 Both the Enigma machine and the Caesar cipher method are implementations of symmetric encryption. Meaning that the same key is used for both encryption and decryption. This is ideal for documents that you're both encrypting and decrypting. But for messages being sent, the issue of sending the key securely with the message is problematic, and subject to a mand in the middle attack.
-![](http://imgur.com/EeTLA9d.jpg)
+![](http://imgur.com/EeTLA9d.jpg=620x)
 
 ##### Asymmetric Encryption
 Asymmetric Encryption means never having to send a decryption key.
-![](http://imgur.com/O378gRx.jpg)
+![](http://imgur.com/O378gRx.jpg=620x)
 If Caesar wants to send a message to Alice, he would use her public key for encryption and she would use her private key for decryption.
 
 ##### A Simple Implementation of RSA encryption:
@@ -50,7 +50,7 @@ And what's called the Tolent is calculated by:
     NSUInteger totient = (privateKeyValueP - 1) * (privateKeyValueQ - 1);
 
 ##### Why prime Numbers?
-![](http://imgur.com/PW2l34D.jpg)
+![](http://imgur.com/PW2l34D.jpg=620x)
 Prime numbers are positive integers have no positive factors other than 1 and itself. This is useful because numbers that have no prime factors have a multiplicative inverse. 
 
 ##### Multiplicative Inverse
@@ -64,7 +64,7 @@ The RSA method has a similar mathematical formula for both encryption and decryp
 
 The cyphertext C, is found by:
 
-![](http://i228.photobucket.com/albums/ee281/blondie420_photo/eqn6786_zpscolxphxf.png)
+![](http://i228.photobucket.com/albums/ee281/blondie420_photo/eqn6786_zpscolxphxf.png=620x)
 
     NSUInteger plaintext = 35;
     
@@ -92,7 +92,7 @@ Solving for d where, ed = 1 mod PQ
 
 Decrypting the message with d is simplified to:
 
-![](http://i228.photobucket.com/albums/ee281/blondie420_photo/eqn6786%201_zpszxkseyi6.png)
+![](http://i228.photobucket.com/albums/ee281/blondie420_photo/eqn6786%201_zpszxkseyi6.png=620x)
 
     // This algorithm iterates, C to the power of i, when i is doubled each time, until M =  C^d (mod PQ) 
     NSUInteger ciphertextPow = 0;
@@ -117,13 +117,13 @@ Decrypting the message with d is simplified to:
     // ciphertextPow data type changed to accommodate for big numbers
 
 The result of these numbers multiplied by the mod of the public key returns the original message number.
-![](http://imgur.com/r5LF1Xy.png)
+![](http://imgur.com/r5LF1Xy.png=620x)
 
 This method of using the public key is the pair {e,n} and the private key as the pair {d,n} works for encryption because factoring large numbers is incredibly difficult.
 
-![](https://windowsontheory.files.wordpress.com/2012/05/producttree1.png)
+![](https://windowsontheory.files.wordpress.com/2012/05/producttree1.png=620x)
 
 To compute a product of all numbers N=N1,N2,Nm in a 4096 bit keys and would require such an unbelievable about of computing power no one has cracked it yet.
 
 2^4096=
-![](http://imgur.com/sX1itEZ.png)
+![](http://imgur.com/sX1itEZ.png=620x)
