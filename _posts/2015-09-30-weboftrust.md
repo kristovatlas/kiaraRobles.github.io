@@ -17,6 +17,7 @@ As someone born in the early days of PGP, my discovery of finding it and learnin
 
 Web-of-trust models, applied to social media have done quite well. Twitter has been credited with an underlying web-of-trust model in the follower-follower "like" and "comment" relationship. Facebook and Linkedin both leverage the FOAF (Friend-Of-A-Friend) web-of-trust model. The next generation of personal encryption tools need to put real social interactions first, and become a more universal tool for communication and reputation.
 
+<br>
 ##### 1. Reputation:
 PGP has four levels of trust that the user can assign to another users' public key: Unknown, marginal, full, and ultimate. But since the trust rating a user gives to public keys in their network is not publicly available to everyone else, reputation in signing keys is limited to a binary confirmation of signed or not signed once it's on the server. Ideally, the user should have the ability to set the degree to which people could specify their trust. Who can rate me, and how specific can they be? A more robust reputation system would include the ability to endorse a person after a mutual signing of keys:
 
@@ -40,6 +41,7 @@ Given the innovation of the blockchain as a decentralized database I can imagine
 
 If the goal of the web-of-trust is to establish and ensure the correct identity association with asymmetric cryptographic keys I think its more than achieved its goal. Nevertheless now that it has, we're compelled to ask what can be improved? The obvious solutions to mainstreaming web-of-trust communication includes making better software. The list includes more secure crypto for the browser, PGP encrypted messaging in mobile apps, and the capacity use our private keys for more than messaging. A more ambitious goal expands the meaning of the web-of-trust to include reputation, identity-validation, and decentralization.
 
+<br>
 References
 ----------
 
