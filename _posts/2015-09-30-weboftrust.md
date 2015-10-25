@@ -8,8 +8,7 @@ The first time I came across PGP, I was reading a blog post on the topic of iden
 
 PGP skills are a badge of honor. But the outside perception is that the only people willing to work for it are nerds and criminals.
 
-In the words of Phil Zimmerman:
-> "Privacy is as apple-pie as the Constitution."
+> In the words of Phil Zimmerman: "Privacy is as apple-pie as the Constitution."
 
 This is a contradiction. Everyone expects privacy, but no one values it enough to invest time into it. As for why Johnny can't encrypt, I'm not sure why PGP is so complicated. But if PGP was truly intended for people to be able to take privacy into their own hands, it's fallin short of its goal. To this day, I still have yet to have anyone sign my PGP key, although few have tried.  
 
