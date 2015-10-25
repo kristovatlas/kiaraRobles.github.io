@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Re-Booting the Web Of Trust
+title: Rebooting the Web-Of-Trust
 ---
-# Re-Booting the Web Of Trust
+# Rebooting the Web-Of-Trust
 
 The first time I came across PGP, I was reading a blog post on the topic of identity with bitcoin public keys. The ideas discussed in the post were compelling enough for me to search around for the writers contact info. But instead of the typical name and email address I expected, all I found was a pseudonym and PGP fingerprint. I could figure this out I thought. That morning at the local breakfast spot I was talking to my friends about my encryption plans for the day. When the man sitting next to me at the restaurant overheard. A fellow PGP user, on his way to a python convention. He gave me his business card and said that if I ever figured out PGP I should try to send him an encrypted message.
 
 PGP skills are a badge of honor. But the outside perception is that the only people willing to work for it are nerds and criminals.
 
 In the words of Phil Zimmerman:
-> Privacy is as apple-pie as the Constitution.
+> "Privacy is as apple-pie as the Constitution."
 
 This is a contradiction. Everyone expects privacy, but no one values it enough to invest time into it. As for why Johnny can't encrypt, I'm not sure why PGP is so complicated. But if PGP was truly intended for people to be able to take privacy into their own hands, it's fallin short of its goal. To this day, I still have yet to have anyone sign my PGP key, although few have tried.  
 
@@ -25,6 +25,7 @@ PGP has four levels of trust that the user can assign to another users' public k
     [expand for the full signed statement]
     Signed by g0449... twitter/malgorithms, github/malgorithms, etc.
 
+<br>
 ##### 2. Identity-valdation:
 Everything about security comes down to trust. How well can I trust that this public key is actually held by the proper owner? Currently PGP relies on the users for validating the identity of the people in their network. Usually this takes place face-to-face. But the ability to authenticate thru third parties while linking their online identities is a significant amount of value added. Keybase currently has the most developed implementation:
 
@@ -33,6 +34,7 @@ Everything about security comes down to trust. How well can I trust that this pu
     ✔ "anarchoass" on twitter: https://twitter.com/anarchoass/status/5895362344...
     ✔ "kiaraRobles" on github: https://gist.github.com/6f5e17b8d03cbabec21d
 
+<br>
 ##### 3. Decentralization
 Given the innovation of the blockchain as a decentralized database I can imagine how a similar protocol could be used to maintain the identity and reputation information on a decentralized blockchain. Putting identity and reputation on a blockchain will ensure that the information comes from a specific user, to the intended recipient, and neither the message or the reputation they've established with each other has been tampered with.
 
