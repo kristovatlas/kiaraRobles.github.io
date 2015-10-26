@@ -4,7 +4,7 @@ title: Rebooting the Web-Of-Trust
 ---
 # Rebooting the Web-Of-Trust
 
-The first time I came across PGP, I was reading a blog post on the topic of identity with bitcoin public keys. The ideas discussed in the post were compelling enough for me to search around for the writers contact info. But instead of the typical name and email address I expected, all I found was a pseudonym and PGP fingerprint. I could figure this out I thought. That morning at the local breakfast spot I was talking to my friends about my encryption plans for the day. When the man sitting next to me at the restaurant overheard. A fellow PGP user, on his way to a python convention. He gave me his business card and said that if I ever figured out PGP I should try to send him an encrypted message.
+The first time I came across PGP, I was reading a blog post on the topic of identity with bitcoin public keys. The ideas discussed in the post compelted me to the point of searching around for the writers contact info. But instead of the typical name and email address I expected, all I found was a pseudonym and PGP fingerprint. I could figure this out I thought. That morning at the local breakfast spot I was talking to my friends about my encryption plans for the day. When the man sitting next to me at the restaurant overheard. A fellow PGP user, on his way to a python convention. He gave me his business card and said that if I ever figured out PGP I should try to send him an encrypted message.
 
 PGP skills are a badge of honor. But the outside perception is that the only people willing to work for it are nerds and criminals.
 
