@@ -12,9 +12,9 @@ A bitcoin paper wallet is a means of storing access to your digital currency off
 
 Seach Github.
 
-At first glance it seems like this attempt to search for paper wallets on Github is sparse. But if we're willing to sift thru the "<> code" section (on the left), we might find some catalysts to our app building ambitions. I find that searching based on language and sorting based on "Resently indexed is the most fruitful.
+At first glance it seems like this attempt to search for paper wallets on Github is sparse. But if we're willing to sift thru the "<> code" section (on the left), we might find some catalysts to our app building ambitions. I find that searching based on language and sorting based on *Recently Indexed* is the most fruitful.
 
-![](http://i.imgur.com/wGRNxXM.png)
+![](http://i.imgur.com/wGRNxXM.png?1)
 
 | [fluidjax/paper_wallet_generator]() | [markchangjz/iOS-Example](https://github.com/markchangjz/iOS-Example/tree/9f180dbb725626e75b3cbd3dafa39d46a21184c4/AirPrint) |
 |--------|-------|
@@ -72,20 +72,21 @@ There are three main moving parts to this process: [Apple Developer](developer.a
     - My apps
     - "+" > New app
     - Select: A name, primary language, bundle ID, and SKU. The bundle ID is a unique identifier the system uses for your app. It looks a little wonky, but the input needs to be in reverse DNS notation and it's recommended that you use your company name and application name.
-    ![](http://imgur.com/Q8XY7yP.png)
+    ![](http://i.imgur.com/Q8XY7yP.png?1)
     - The SKU is (stockkeeping unit): *The SKU is any alphanumeric sequence of letters and numbers you’d like to use to be uniquely identified in Apple’s system. You may create any string of UTF-8 letters and numbers, as long as it is unique to your developer account. This SKU is internal only and is not seen by users at any time. After you have submitted your metadata, this SKU is not editable.* I reused the bundle ID, but you can choose anything you want.
+    ![](http://i.imgur.com/v0wnnZk.png?1)
 
 3. **Build an App Archive in Xcode.** Its recommended that you comment out all your NSLogs for performance reasons. Click: 
     - On the blue file (in the left Navigator pane)
     - Build settings
     - In code signing switch from *iOS Developer* to *iOS Distribution*
-    ![](http://imgur.com/zw31lHo.png)
+    ![](http://imgur.com/zw31lHo.png?1)
     - Scroll down to packaging, and switch the *Product Bundle Identifier* to the bundle ID you assigned in iTunes connection.
     - In the list of iOS simulators switch to iOS device. If it's not properly selected the option to archive your app will be greyed out.
-    ![](http://imgur.com/W7IzzTj.png)
+    ![](http://imgur.com/W7IzzTj.png?1)
     - Product > Archive
     - Validate
-    ![](http://imgur.com/lRijuwn.png)
+    ![](http://imgur.com/lRijuwn.png?1)
 
 4. **Submit in iTunes Connect.** The build you've done in Xcode should be recognized here. In iTunes connection, you can submit your app to Apple, or send it to the beta TestFlight for testing. Click: 
     - On the left hand panel select *Prepare for Submission*
