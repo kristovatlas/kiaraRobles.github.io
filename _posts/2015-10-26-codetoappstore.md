@@ -2,7 +2,6 @@
 layout: post
 title: From Code to AppStore in 10 Days
 ---
-
 # From Code to AppStore in 10 Days
 
 What does building an app really look like? We know that for iOS the tools are always the same: Xcode and people. As far a software life cycle goes, a large app in maintenance is going to look dramatically different from launching a fresh app from a new concept. When creating an entirely new app, my first thought is to set a timeline. For this one, my goal was to have it done as fast as possible.
