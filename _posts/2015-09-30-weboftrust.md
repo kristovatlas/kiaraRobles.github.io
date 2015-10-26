@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Rebooting the Web-Of-Trust
+title: First encounters with PGP
 ---
-# Rebooting the Web-Of-Trust
+# First encounters with PGP
 
 The first time I came across PGP, I was reading a blog post on the topic of identity with bitcoin public keys. The ideas discussed in the post compelted me to the point of searching around for the writers contact info. But instead of the typical name and email address I expected, all I found was a pseudonym and PGP fingerprint. I could figure this out I thought. That morning at the local breakfast spot I was talking to my friends about my encryption plans for the day. When the man sitting next to me at the restaurant overheard. A fellow PGP user, on his way to a python convention. He gave me his business card and said that if I ever figured out PGP I should try to send him an encrypted message.
 
