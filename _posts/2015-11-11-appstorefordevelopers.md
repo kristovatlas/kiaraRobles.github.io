@@ -78,7 +78,12 @@ My .podfile looks like this:
     #   * Write the description between the DESC delimiters below.
     #   * Finally, don't worry about the indent, CocoaPods strips it!  
       s.description      = <<-DESC 
-      This pod was developed to convert a NSString into a NSDate object so you dont have to use that date spinner anymore! Yay. The string "next Monday" returns the NSDate object of the next Monday, relative to today. The class interprets fuzzy human readable words to an exact date at midnight. Currently, the days of the week are supported with the prefix "next", "this", or "last", as well as the words "yesterday", "tomorrow", and "today".
+      This pod was developed to convert a NSString into a NSDate object so you 
+      dont have to use that date spinner anymore! Yay. The string "next Monday" 
+      returns the NSDate object of the next Monday, relative to today. The class 
+      interprets fuzzy human readable words to an exact date at midnight. 
+      Currently, the days of the week are supported with the prefix "next", "this",
+      or "last", as well as the words "yesterday", "tomorrow", and "today".
                        DESC
 
       s.homepage         = "https://github.com/kiaraRobles/KFRFuzzyDateTranslator"
