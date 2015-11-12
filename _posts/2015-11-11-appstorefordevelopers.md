@@ -137,6 +137,14 @@ You may also want to add an example project and test files at this point.
 
 #### 5. Push it to the "CocoaPod Store"
 
+Validate your pod with this line:
+
+    // ♥ pod spec lint KFRFuzzyDateTranslator.podspec
+    -> KFRFuzzyDateTranslator (0.1.0)
+    Analyzed 1 podspec.
+    KFRFuzzyDateTranslator.podspec passed validation.trunk register 
+    name@example.org 'Your Name' --description='macbook pro'
+
 Register your session with this line:
 
     // ♥ pod trunk register name@example.org 'Your Name' --description='macbook pro'
