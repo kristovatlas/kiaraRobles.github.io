@@ -3,7 +3,6 @@ layout: post
 title: Contributing to The App Store for Developers
 ---
 # Contributing to The App Store for Developers
----
 
 > When asked to describe CocoaPods in one sentence [Orta Therox](https://twitter.com/orta) calls it, 
 "The App Store for Developers". 
