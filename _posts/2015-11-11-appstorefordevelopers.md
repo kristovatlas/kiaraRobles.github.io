@@ -24,6 +24,7 @@ There are several other blog posts on the topic of creating CocoaPods that I'd r
 4. Add the code for your pod.
 5. Push it to the "CocoaPod Store"
 
+
 #### 1. Create the pod skeleton directory
     // ♥ pod lib create KFRFuzzyDateTranslator
     Cloning `https://github.com/CocoaPods/pod-template.git` into `KFRFuzzyDateTranslator`.
@@ -51,6 +52,7 @@ Create a github repository then push the skeleton directory to its new home onli
     // ♥ git remote add origin https://github.com/<GITHUB_USERNAME>/KFRFuzzyDateTranslator.git
     // ♥ git push -u origin master
 
+
 #### 3. Update the metadata of the pod
 
 My computer has no idea what a .podspec is, so you have to tell it what text editor to use in command line. Alterativy you can open your new project in xcode to edit the .podspec file there, or run the command below to open it in sublime text.
@@ -60,17 +62,17 @@ My computer has no idea what a .podspec is, so you have to tell it what text edi
 My .podfile looks like this:
 
     #
-    # Be sure to run `pod lib lint KFRFuzzyDateTranslator.podspec' to ensure this is a
-    # valid spec before submitting.
+    # Be sure to run `pod lib lint KFRFuzzyDateTranslator.podspec' to ensure this is
+    # a valid spec before submitting.
     #
     # Any lines starting with a # are optional, but their use is encouraged
-    # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
+    # To learn more about Podspec see http://guides.cocoapods.org/syntax/podspec.html
     #
     
     Pod::Spec.new do |s|
       s.name             = "KFRFuzzyDateTranslator"
       s.version          = "0.1.0"
-      s.summary          = "A objective-c cocoapod that converts NSStrings to NSDate objects."
+      s.summary          = "Converts NSStrings to NSDate objects."
 
     # This description is used to generate tags and improve search results.
     #   * Think: What does it do? Why did you write it? What is the focus?
@@ -87,10 +89,13 @@ My .podfile looks like this:
                        DESC
 
       s.homepage         = "https://github.com/kiaraRobles/KFRFuzzyDateTranslator"
-      # s.screenshots     = "http://imgur.com/2bl8bRK.png", "http://imgur.com/4S8B91p.png", "http://imgur.com/TgSAweE.png"
+      # s.screenshots     = "http://imgur.com/2bl8bRK.png", 
+                            "http://imgur.com/4S8B91p.png", 
+                            "http://imgur.com/TgSAweE.png"
       s.license          = 'MIT'
       s.author           = { "kiaraRobles" => "kiara.robles@gmail.com" }
-      s.source           = { :git =>     "https://github.com/kiaraRobles/KFRFuzzyDateTranslator.git", :tag => s.version.to_s }
+      s.source           = { :git =>     
+      "https://github.com/kiaraRobles/KFRFuzzyDateTranslator.git", :tag => s.version.to_s }
       # s.social_media_url = 'https://twitter.com/anarchoass'
 
       s.platform     = :ios, '7.0'
@@ -116,6 +121,7 @@ Yay! Tag the version
     // ♥ git tag 0.1.0
     // ♥ git push origin 0.1.0
 
+
 #### 4. Add the code for your pod.
 
 Open up your project directory, remove the file here:
@@ -127,6 +133,7 @@ And replace it with your classes here:
 ![](http://imgur.com/3sNTjGJ.png)
 
 You may also want to add an example project and test files at this point.
+
 
 #### 5. Push it to the "CocoaPod Store"
 
@@ -144,7 +151,8 @@ Verify the session sent to your email address.. then:
     Updating spec repo `master`
     - Log messages:
        - November 11th, 17:48: Push for `KFRFuzzyDateTranslator 0.1.0' initiated.
-       - November 11th, 17:48: Push for `KFRFuzzyDateTranslator 0.1.0' has been pushed (1.20875384 s).
+       - November 11th, 17:48: Push for `KFRFuzzyDateTranslator 0.1.0' has been 
+       pushed (1.20875384 s).
        
 
 Done. Contribution to open source achieved!
