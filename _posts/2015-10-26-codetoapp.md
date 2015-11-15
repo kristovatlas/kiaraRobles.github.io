@@ -100,4 +100,4 @@ There are three main moving parts to this process: [Apple Developer](developer.a
     ![](http://i.imgur.com/vXgRJay.png?1)
     
     
-Once the build it summited, you're done! And you're free to start working on the next version or your next app. **Sign up [here](https://kiararobles.wufoo.com/forms/z1spzi0g0jz1ktx/) to beta test the Foldy Paper Wallet in this tutorial.**
+Once the build it summited, you're done! And you're free to start working on the next version or your next app. **Download the Foldy Paper Wallet from this tutorial [here](https://itunes.apple.com/us/app/foldy-paper-wallet/id1051481352?mt=8&ign-mpt=uo%3D4).**
