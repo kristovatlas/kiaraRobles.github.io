@@ -3,6 +3,8 @@ layout: post
 comments: true
 title: Bitcoin as an Ethical Alternative to the Dollar
 ---
+# Bitcoin as an Ethical Alternative to the Dollar
+
 Money in and of itself is neither good nor bad. Money is simply a means to an end. It is a store of value, whether it’s paper under the mattress or 0s and 1s in a bank account. Bitcoin and U.S. dollars are two different kinds of money.
 
 In the state of California, it costs as much annually to incarcerate a person as the average salary of someone working—in California. In 2010 BP paid $40 billion dollars for the right to spill and clean oil. Wars are paid by raising taxes and printing money.

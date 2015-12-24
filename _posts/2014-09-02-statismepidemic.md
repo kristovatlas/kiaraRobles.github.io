@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: The Statism Epidemic
 ---
+# The Statism Epidemic
 
 To date Statism, has no known vaccine and consumes the minds of 60-90% of people who contract it. It is transmitted via early contact with people with delusions of power, with the most common transmission being from parents to child. Once infected it is nearly impossible for the victim to know the delusions they suffer from. Symptoms of Statism include hallucinating lines or borders on landmasses, paranoia of people crossing these borders, believing people are better or worse than people on the other side, and pissing the colors of their state flag.
  
