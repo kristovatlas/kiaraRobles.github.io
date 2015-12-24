@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Economic Concerns over the Bitcoin-XT Hard Fork
 ---
 # Economic Concerns over the Bitcoin-XT Hard Fork

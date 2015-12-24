@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Contributing to The App Store for Developers
 ---
 # Contributing to The App Store for Developers

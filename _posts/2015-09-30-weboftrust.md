@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: First Encounters with PGP
 ---
 # First Encounters with PGP

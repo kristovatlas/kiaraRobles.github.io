@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Bitcoin as an Ethical Alternative to the Dollar
 ---
 Money in and of itself is neither good nor bad. Money is simply a means to an end. It is a store of value, whether it’s paper under the mattress or 0s and 1s in a bank account. Bitcoin and U.S. dollars are two different kinds of money.
