@@ -1,6 +1,7 @@
 ---
 layout: post
 title: From Code to App Store in 10 Days
+tags: [ios]
 ---
 #From Code to App Store in 10 Days
 

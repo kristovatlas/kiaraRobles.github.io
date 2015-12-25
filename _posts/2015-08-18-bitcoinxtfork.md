@@ -2,6 +2,7 @@
 layout: post
 comments: true
 title: Economic Concerns over the Bitcoin-XT Hard Fork
+tags: [cryptocurrency, economics]
 ---
 # Economic Concerns over the Bitcoin-XT Hard Fork
 ### A Response to“[Why Bitcoin is Forking]()”

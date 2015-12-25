@@ -2,6 +2,7 @@
 layout: post
 comments: true
 title: First Encounters with PGP
+tags: [encryption, personal]
 ---
 # First Encounters with PGP
 

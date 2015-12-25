@@ -2,6 +2,7 @@
 layout: post
 comments: true
 title: RSA Encryption With Primes
+tags: [encryption]
 ---
 # RSA Encryption With Primes
 ##### An Objective-C Implementation

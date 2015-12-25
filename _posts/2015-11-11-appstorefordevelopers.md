@@ -2,6 +2,7 @@
 layout: post
 comments: true
 title: Contributing to The App Store for Developers
+tags: [ios, open-source]
 ---
 # Contributing to The App Store for Developers
 

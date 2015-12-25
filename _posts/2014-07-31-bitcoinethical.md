@@ -2,6 +2,7 @@
 layout: post
 comments: true
 title: Bitcoin as an Ethical Alternative to the Dollar
+tags: [cryptocurrency]
 ---
 # Bitcoin as an Ethical Alternative to the Dollar
 
