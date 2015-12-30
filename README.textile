@@ -10,3 +10,7 @@ The following directories and their contents are Copyright Kiara Robles. You may
 * images/
 
 All other directories and files are MIT Licensed
+
+h1. TODO
+
+[ ] Add tags
