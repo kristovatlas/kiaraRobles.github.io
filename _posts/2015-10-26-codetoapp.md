@@ -11,7 +11,7 @@ A bitcoin paper wallet is a means of storing access to your digital currency off
 
 ### 1. From Open Source to Crafted Beauty
 
-Seach Github.
+Search GitHub
 
 At first glance it seems like this attempt to search for paper wallets on Github is sparse. But if we're willing to sift thru the *<> code* section (on the left), we might find some catalysts to our app building ambitions. I find that searching based on language and sorting based on *Recently Indexed* is the most fruitful.
 
