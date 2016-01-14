@@ -1,21 +1,23 @@
 ---
 layout: post
 comments: true
-title: Why Was the Left Node Sad?
+title: Sorted Arrays to Binary Search Trees
 tags: [swift]
 ---
-# Why Was the Left Node Sad?
+# Sorted Arrays to Binary Search Trees
 
-> A. Because he had the least value in his family, and had no children. 
+##### Q. Why was the left node sad?
+##### A. Because he had the least value in his family, and had no children. 
 
-There are those who understand binary search trees and those that don't. I'll admit that I sometimes dont. For a great many of us hobbyists turned programmers, the thought of traversing a binary search tree rarely (if ever) crosses my mind. But considering the engineering feat and beautiful simplicity of these data structures they're worth familiarizing yourself with. Binary trees are implemented in wireless networking, nearly every 3D video game, and the compression algorithms for making .gifs.
+There are those who understand binary search trees and those who don't. I'll admit that I sometimes dont. For a great many of us hobbyists turned programmers, the thought of traversing a binary search tree rarely (if ever) crosses my mind. Considering the engineering feat and beautiful simplicity of these data structures the are worth familiarizing yourself with. Binary trees are implemented in wireless networking, nearly every 3D video game, and the compression algorithms for making .gifs.
 
 #### Binary tree vs. Binary search tree
 
-The distinction between a binary tree and a binary search tree is similar to that of a rectangle and a square. A square is always a rectangle, but a rectangle isnt always a perfect square. A binary tree is a data structure where each node has up to two leaves. The binary search tree is a binary tree, with the additional requirement that its also sorted with the following properties:
--   All values on the left subtree are less than the root
--   All values on the right subtree are greater than the root
--   Each subtree is itself, a binary search tree
+The distinction between a binary tree and a binary search tree is similar to that of a rectangle and a square. A square is always a rectangle, but a rectangle isnt always a square. A binary tree search tree is always a is biary tree data structure where each node has up to two leaves. But the search fuctionaly on the data structure comes with the additional requirement that it is also sorted with the following properties:
+
+- All values on the left subtree are less than the root
+- All values on the right subtree are greater than the root
+- Each subtree is itself, a binary search tree
 
 ![](http://sourcecodemania.com/wp-content/uploads/2012/05/binary-tree-vs-binary-search-tree.jpg)
 
@@ -25,13 +27,13 @@ Suppose you have an array of sorted numbers. Divide the array in half and each s
 
 ![](https://blog.penjee.com/wp-content/uploads/2015/12/optimal-binary-search-tree-from-sorted-array.gif)
 
-Searching this kind of data structure becomes "Oh" so many times fasters than searching each element from the initial array. 
+Searching this kind of data structure becomes significantly faster than searching each individual element from the initial array.
 
 ![](https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-sorted-array-animation.gif)
 
 #### Implementing the Binary Search Tree
 
-If you know your array is ordered as a binary search tree, then you can search for a value and its position in the array. This is done by repeatedly halving the search interval. Each iteration compares the middle value of the search interval against the input value or key. The inequality determines which half of tree to continue searching, eliminating the other half of the search interval each time. If the resulting value matches the key, the function returns true and its position in the height of the tree. 
+If you know your array is ordered as a binary search tree, then you can search for a value and its position in the tree. This is done by repeatedly halving the search interval. Each iteration compares the middle value of the search interval against the input value or key. The inequality determines which half of tree to continue searching, eliminating the other half of the search interval each time. If the resulting value matches the key, the function returns true and its position in the height of the tree. 
 
     func binarySearch(var arrayOfInts: [Int], key: Int) -> (Bool, Int)
     {
