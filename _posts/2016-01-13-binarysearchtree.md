@@ -8,20 +8,20 @@ tags: [swift]
 
 > A. Because he had the least value in his family, and had no children. 
 
-There are those who understand binary search trees and those that don't. I'll admit that I some times dont. For a great many of us hobbyist turned programmers, the thought of traversing a binary search tree rarely (if ever) crosses my mind. But considering binary trees are implemented in wireless networking, nearly every  3D video game, and the compression algorithms for making .gifs it's worth knowing about. 
+There are those who understand binary search trees and those that don't. I'll admit that I sometimes dont. For a great many of us hobbyists turned programmers, the thought of traversing a binary search tree rarely (if ever) crosses my mind. But considering the engineering feat and beautiful simplicity of these data structures they're worth familiarizing yourself with. Binary trees are implemented in wireless networking, nearly every 3D video game, and the compression algorithms for making .gifs.
 
 #### Binary tree vs. Binary search tree
 
-The distinction between binary tree and Binary search tree is similar to that of a rectangle and a square. A square is always a rectangle, but a rectangle is not always a perfect square. A binary tree is a data structure where each node has up to two leaves. The binary search tree is a binary tree, with the additional requirement that its sorted with the following properties:
-- All values to the left subtree are less than the root
-- All values to the right subtree are greater than the root
-- Each subtree is, itself, a binary search tree
+The distinction between a binary tree and a binary search tree is similar to that of a rectangle and a square. A square is always a rectangle, but a rectangle isnt always a perfect square. A binary tree is a data structure where each node has up to two leaves. The binary search tree is a binary tree, with the additional requirement that its also sorted with the following properties:
+-   All values on the left subtree are less than the root
+-   All values on the right subtree are greater than the root
+-   Each subtree is itself, a binary search tree
 
 ![](http://sourcecodemania.com/wp-content/uploads/2012/05/binary-tree-vs-binary-search-tree.jpg)
 
 #### Inventing the Binary Search Tree
 
-Suppose you have an array of sorted numbers. Divide the array in half and each subsequent half repeatedly, and keep the middle value separate. You can visualize the fold in the array expanding upwards into a tree.
+Suppose you have an array of sorted numbers. Divide the array in half and each subsequent half repeatedly, while keeping the middle value separate. You can visualize the fold in the array expanding upwards into a tree.
 
 ![](https://blog.penjee.com/wp-content/uploads/2015/12/optimal-binary-search-tree-from-sorted-array.gif)
 
@@ -31,7 +31,7 @@ Searching this kind of data structure becomes "Oh" so many times fasters than se
 
 #### Implementing the Binary Search Tree
 
-If know your array is ordered as a binary search tree, then you can search for a value and its position in the array. This is done by repeatedly halving the search interval. Each iteration compares the middle value of the search interval against the input value or key. The inequality determines which half of tree to continue searching, eliminating the other half of the search interval each time. If the resulting value value matches the key, the function returns true and its position in the height of the tree. 
+If you know your array is ordered as a binary search tree, then you can search for a value and its position in the array. This is done by repeatedly halving the search interval. Each iteration compares the middle value of the search interval against the input value or key. The inequality determines which half of tree to continue searching, eliminating the other half of the search interval each time. If the resulting value matches the key, the function returns true and its position in the height of the tree. 
 
     func binarySearch(var arrayOfInts: [Int], key: Int) -> (Bool, Int)
     {
@@ -106,9 +106,9 @@ If know your array is ordered as a binary search tree, then you can search for a
 
 In the above code traverses the following path:
 
-              **5**
-          **3**       8        
-        1   **4**   6   9
+**5** <br>
+**3**       8        
+1   **4**   6   9
 
 And prints the result below:
 
