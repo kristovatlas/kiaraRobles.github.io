@@ -89,12 +89,13 @@ If you know your array is ordered as a binary search tree, then you can search f
         /*  Check if the sorted value matches the input key  */
         /*                                                   */
         if (root == key)
-       {
+        {
            isBinarySearch = true
-       }
-      else {
+        }
+        else 
+        {
           isBinarySearch = false
-    }
+        }
     
     return (isBinarySearch, ++treeHeight)
     }
