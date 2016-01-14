@@ -34,9 +34,9 @@ Searching this kind of data structure becomes significantly faster than searchin
 
 ![](https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-sorted-array-animation.gif)
 
-#### Implementing the Binary Search Tree
+#### A Swift Implementation
 
-If you know your array is ordered as a binary search tree, then you can search for a value and its position in the tree. This is done by repeatedly halving the search interval. Each iteration compares the middle value of the search interval against the input value or key. The inequality determines which half of tree to continue searching, eliminating the other half of the search interval each time. If the resulting value matches the key, the function returns true and its position in the height of the tree. 
+If you know your array is ordered as a binary search tree, then you can search for a value and its position in the tree. This is done by repeatedly halving the search interval. Each iteration compares the middle value of the search interval against the input value or key. The inequality determines which half of the tree to continue searching, eliminating the other half of the search interval each time. If the resulting value matches the key, the function returns true and its position in the height of the tree. 
 
     func binarySearch(var arrayOfInts: [Int], key: Int) -> (Bool, Int)
     {
@@ -107,7 +107,7 @@ If you know your array is ordered as a binary search tree, then you can search f
 
 *WARNING: The following code was tested with a limited number of inputs, please do not implement into any actual search engines.*
 
-In the above code traverses the following path:
+The above code traverses the following path:
 
 **5** <br>
 **3**       8        
