@@ -1,10 +1,10 @@
 ---
 layout: post
 comments: true
-title: Why Was the Left Node of the Binary Search Tree Sad?
+title: Why Was the Left Node Sad?
 tags: [swift]
 ---
-# Why Was the Left Node of a Binary Search Tree Sad?
+# Why Was the Left Node Sad?
 
 > A. Because he had the least value in his family, and had no children. 
 
