@@ -6,14 +6,17 @@ tags: [swift]
 ---
 # Sorted Arrays to Binary Search Trees
 
-##### Q. Why was the left node sad?
-##### A. Because he had the least value in his family, and had no children. 
 
-There are those who understand binary search trees and those who don't. I'll admit that I sometimes dont. For a great many of us hobbyists turned programmers, the thought of traversing a binary search tree rarely (if ever) crosses my mind. Considering the engineering feat and beautiful simplicity of these data structures the are worth familiarizing yourself with. Binary trees are implemented in wireless networking, nearly every 3D video game, and the compression algorithms for making .gifs.
+**Q. Why was the left node sad?**
+
+**A. Because he had the least value in his family, and had no children.**
+
+
+There are those who understand binary search trees and those who don't. I'll admit that I sometimes fail to remember the details. For a great many of us hobbyists turned programmers, the thought of traversing a binary search tree rarely (if ever) crosses my mind. But considering the simplicity and usefulness of these data structures they are worth familiarizing yourself with. Binary trees are implemented in nearly every 3D video game, wireless networking, and even the compression algorithms of .gifs.
 
 #### Binary tree vs. Binary search tree
 
-The distinction between a binary tree and a binary search tree is similar to that of a rectangle and a square. A square is always a rectangle, but a rectangle isnt always a square. A binary tree search tree is always a is biary tree data structure where each node has up to two leaves. But the search fuctionaly on the data structure comes with the additional requirement that it is also sorted with the following properties:
+The distinction between a binary tree and a binary search tree is similar to that of a rectangle and a square. A square is always a rectangle, but a rectangle isn't always a square. A binary search tree is a binary tree, where each node has up to two children or leaves. But the search functionality on the data structure comes with the additional requirement that it is also sorted with the following properties:
 
 - All values on the left subtree are less than the root
 - All values on the right subtree are greater than the root
@@ -74,7 +77,6 @@ If you know your array is ordered as a binary search tree, then you can search f
         }
         else if (root > key)
         {
-            ++mid
             arrayOfInts.removeRange(mid...rightNode)
         }
         else if (root < key)
@@ -86,7 +88,6 @@ If you know your array is ordered as a binary search tree, then you can search f
         /*                                                   */
         /*  Check if the sorted value matches the input key  */
         /*                                                   */
-        print(root)
         if (root == key)
        {
            isBinarySearch = true
@@ -104,7 +105,7 @@ If you know your array is ordered as a binary search tree, then you can search f
     var result = binarySearch(arrayOfInts, key: key)
     print(result)
 
-*WARNING*: The following code is not without bugs, please do not implement into any search engine.
+*WARNING: The following code was tested with a limited number of inputs, please do not implement into any actual search engines.*
 
 In the above code traverses the following path:
 
@@ -115,9 +116,8 @@ In the above code traverses the following path:
 And prints the result below:
 
     [1, 3, 4, 5, 6, 8, 9]
-    [1, 3, 4, 5]
-    [4, 5]
-    4
+    [1, 3, 4]
+    [4]
     (true, 3)
 
 
