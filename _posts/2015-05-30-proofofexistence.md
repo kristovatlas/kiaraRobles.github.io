@@ -1,11 +1,11 @@
 ---
 layout: post
 comments: true
-title: A Proof-of-Existence Without Aliens, Ghosts, or God.
+title: A Proof-of-Existence Without Aliens, Ghosts, or God
 tags: [cryptocurrency]
 ---
 
-# A Proof-of-Existence Without Aliens, Ghosts, or God.
+# A Proof-of-Existence Without Aliens, Ghosts, or God
 
 ![](https://cdn-images-1.medium.com/max/1000/1*MRPA4_wRYOigWZfFCl2ADQ.png)
 
