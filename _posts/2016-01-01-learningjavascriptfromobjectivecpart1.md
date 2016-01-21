@@ -12,7 +12,8 @@ When starting something new that you know is going to take at least several hund
 
 Because the definition of an array implies some standard functionality similar array methods exist in both JavaScript and Objective-C. Only, the JavaScript methods have much cuter names.
 
-### 1. **The pop() method** is identical to the Objective-C removeLastObject: method
+##### 1. **The pop() method** 
+Is identical to the Objective-C removeLastObject: method
 
         - (void)pop
         {
@@ -21,7 +22,8 @@ Because the definition of an array implies some standard functionality similar a
 
 In Objective-C, the addObject: method adds only one object at a time. To add multiple objects, you have to call that method on an array in a loop. However, JavaScript allows for adding and subtracting multiple objects to an array with one method call. To implement something similar to this in Objective-C we use a variable method form from C.
 
-### 2. **The splice() method** adds and or removes items to/from an array
+##### 2. **The splice() method** 
+Adds and or removes items to/from an array
 
         - (void)splice:(NSUInteger)index remove:(NSUInteger)remove arguments:(id)firstObject,... NS_REQUIRES_NIL_TERMINATION
        {
@@ -50,7 +52,8 @@ As in Java and Swift, all array in JavaScript are mutable. So in implementing Ja
 
 Consistent with the cute naming style of JavaScript array methods:
 
-### 3. **The slice() method** returns the selected elements in an array, as a new array object.
+##### 3. **The slice() method** 
+Returns the selected elements in an array, as a new array object.
      
         - (NSArray *)slice:(NSUInteger)start stop:(NSUInteger)stop
         {
@@ -61,11 +64,12 @@ Consistent with the cute naming style of JavaScript array methods:
 By this point, I have some minor JavaScript envy. Why Objective-C doesn't have a simple reverse() method or this nifty fill() method that replaces all the objects in the array, I don't know. Then again, why JavaScript does have a copyWithin method I don't know either. 
 
 According to the MDN copyWithin:
+
 > The copyWithin() method copies the sequence of array elements within the array to the position starting at a target. The copy is taken from the index positions of the second and third arguments start and end. The end argument is optional and defaults to the length of the array.
 
 Which is some fancy array manipulation method I can't figure out a use case for. Never the less. Here it is implemented below:
 
-### 4. **The copyWithin() method** 
+##### 4. **The copyWithin() method** 
 
        - (NSArray *)copyWithin:(NSInteger)target start:(NSInteger)start stop:(NSInteger)stop
        {
