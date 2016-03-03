@@ -1,0 +1,89 @@
+// Typography
+// --------------------------------------------------
+
+html,
+body
+  font-family: "Helvetica Neue", sans-serif
+  color: $text-color
+
+h1
+  font-size: 48px
+  margin: 0
+  font-weight: 300
+  &.intro-text
+    color: #000
+    text-align: center
+    padding-top: 100px
+  
+h2
+  font-size: 30px
+  &.sub-heading
+    text-align: center
+    color: $text-color-light
+    font-size: 20px
+    font-weight: 100
+    line-height: 1.6
+    letter-spacing: 1px
+    margin: 20px auto
+  &.support-heading
+    margin-top: 0
+    font-weight: 400
+    
+ 
+h3
+  &.project-title
+    font-size: 16px
+    font-weight: 300
+    
+p
+  font-size: 16px
+  line-height: 1.4
+  font-weight: 300
+    
+a
+  @extend p
+  color: inherit
+  font-weight: inherit
+  text-decoration: none
+  &:hover
+    color: $text-color
+    border-bottom: 2px solid $text-color
+  
+.text-white
+  color: #fff!important
+  
+  
+.dl-horizontal dt
+  clear: left
+  text-align: right
+  text-overflow: ellipsis
+  white-space: nowrap
+
+  
+  
+  
+dl.dl-horizontal
+  width: 100%
+  //padding-left: 75px
+  dt,
+  dd
+    font-size: 16px
+  dt
+    display: block
+    width: 100%
+    margin: 0
+    padding: 0
+    font-weight: 400
+    text-align: left
+    font-size: 18px
+  dd
+    display: block
+    width: 100%
+    margin: 0
+    margin-bottom: 20px
+    padding: 0
+    text-align: left
+    color: darken(#fff, 5)
+    font-weight: 300
+    line-height: 1.6
+

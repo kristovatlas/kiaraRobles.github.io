@@ -1,0 +1,170 @@
+// General Styling
+// --------------------------------------------------
+
+::selection
+  background: #11b967
+  color: #fff
+
+body
+  background-color: #fff
+  margin: 0
+  padding: 0
+  
+body.clickTrack
+  background-color: #00BDCE
+  color: #fff
+  
+body.hexmate
+  background-color: #fff
+  color: #000
+    
+.main-content
+  position: relative
+  min-height: 100vh
+  height: auto !important
+  padding: 0 15px
+  margin: 0px auto -50px
+  z-index: 1  
+  
+.sub-links
+  text-align: center
+  padding-bottom: 75px
+  a
+    font-size: 15px
+    font-weight: 500
+    margin: 0px 15px
+    color: #454545
+  
+.projects
+  width: 100%
+  max-width: 300px
+  margin: 45px auto
+  padding-bottom: 100px
+  overflow: auto
+  +media-queries(630px, 930px)
+    max-width: 600px
+  +media-queries(930px)
+    max-width: 900px
+  
+.single-project
+  width: 100%
+  width: 300px
+  margin: 0 auto 15px
+  float: center
+  text-align: center
+  +media-queries(630px)
+    float: left
+  a.wip
+    cursor: no-drop
+  
+.app-intro
+  display: table
+  min-height: 100vh
+  width: 100%
+
+.app-intro-inner
+  display: table-cell
+  vertical-align: middle
+  width: 100%
+  
+.app-description
+  text-align: center
+  width: 100%
+  max-width: 450px
+  margin: 0 auto
+  float: center
+  color: #000
+  h1
+    font-weight: 500
+    display: inline-block
+    &:after
+      margin-top: 15px
+      margin-left: auto
+      margin-right: auto
+      display: block
+      content: ""
+      width: 120px
+      height: 2px
+    &.clicktrack-title:after
+      background: rgba(255,255,255,.5)
+    &.hexmate-title:after
+      background: #ff5da8
+      background: -moz-linear-gradient(top, #ff5da8 0%, #ff2015 100%)
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff5da8), color-stop(100%,#ff2015))
+      background: -webkit-linear-gradient(top, #ff5da8 0%,#ff2015 100%)
+      background: -o-linear-gradient(top, #ff5da8 0%,#ff2015 100%)
+      background: -ms-linear-gradient(top, #ff5da8 0%,#ff2015 100%)
+      background: linear-gradient(to bottom, #ff5da8 0%,#ff2015 100%)
+      background-image: linear-gradient(rgb(255, 93, 168) 0%, rgb(255, 32, 21) 100%)
+  p
+    padding: 0 30px
+    
+.app-store-link
+  &:hover
+    opacity: 0.8
+    border: none
+  &.not-yet-available
+    cursor: no-drop
+
+.app-support
+  width: 100%
+  max-width: 900px
+  margin-left: auto
+  margin-right: auto
+  padding-top: 75px
+  padding-bottom: 100px
+  .app-support-inner
+    h1
+      font-weight: 700
+      margin: 0px
+      padding-left: 25px
+      +media-queries(650px) 
+        padding-left: 75px
+    img
+      position: relative
+      display: block
+      width: auto
+      max-height: 350px
+      margin-left: auto
+      margin-right: auto
+      
+    
+.left, .right
+  position: relative
+  display: inline-block
+  width: 100%   
+.left
+  width: 100%
+  float: left
+  +media-queries(650px)
+    width: 50%
+.right
+  width: 100%
+  float: left
+  +media-queries(650px) 
+    width: 50%
+    float: center
+  
+  
+// Sections
+
+section
+  min-height: 380px
+  height: auto
+  overflow: auto
+  margin: 25px
+  +media-queries(650px) 
+    margin: 50px 75px
+
+.section-devider
+  padding: 0 75px
+  hr
+    display: block
+    background: #fff
+    border-width: 1px
+    border-color: inherit
+    border-style: solid
+    color: #fff
+    opacity: 0.5
+    height: 0px
+    margin: 50px auto

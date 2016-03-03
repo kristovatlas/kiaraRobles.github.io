@@ -1,0 +1,33 @@
+// Navigation
+// --------------------------------------------------
+
+nav
+  position: relative
+  top: 0
+  width: 100%
+  max-width: 900px
+  margin: 0 auto
+  padding: 15px 0
+  border-bottom: 1px solid rgba(#000, 0.2)
+  ul
+    list-style: none
+    li
+      display: inline-block
+      margin: auto 15px
+      &:first-child
+        margin: auto 15px auto 0px
+      a
+        padding: 5px 0px
+        font-size: 12px
+        text-transform: uppercase
+        &.active
+          border-bottom: 2px solid #000
+  &.white-nav
+    border-bottom: 1px solid rgba(#fff, 0.5)
+    ul li a.active
+      border-bottom: 2px solid #fff
+    ul li a:hover
+      color: #fff
+      border-color: #fff
+  ul.hexmate li a:hover, ul.hexmate li a.active
+    border-color: #ff2015
