@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Life and Life Cycle
-tags: [cryptocurrency]
+tags: [ios]
 ---
 # Life and Life Cycle
 
@@ -23,25 +23,25 @@ An alarm manager class intertwines these components. AVAudioPlayer plays a const
 3. VIOP - The application provides the ability for the user to make phone calls using an Internet connection.
 
 All of these have to be stated in the Info.plist. For this app I claimed both audio and viop background functionality by adding this to plist:
-		 <key>UIBackgroundModes</key>
-		 <array>
-					<string>audio</string>
-					<string>voip</string>
-		 </array>
+
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>voip</string>
+	</array>
 
 **AVAudioPlayer plays a silent sound to keep the app running in the background, so that the alarm timer stays active.**
 
 #### There are 6 methods that the app delegate calls that trigger/signal the next step in the app life cycle.
 The three that are significant to this app are in bold below:
 
-		 application:didFinishLaunchingWithOptions:
-		 applicationDidBecomeActive:
-		 applicationWillResignActive:
-		 applicationDidEnterBackround:
-		 applicationWillEnterForegound:
-		 applicationWillTerminate:
+	application:didFinishLaunchingWithOptions:
+	applicationDidBecomeActive:
+	applicationWillResignActive:
+	applicationDidEnterBackround:
+	applicationWillEnterForegound:
+	applicationWillTerminate:
 
 Because applicationDidEnterBackround: cancels all the active local notifications and timers in the app there are functionally three times that the alarms get set. First, when the app is launched with application:didFinishLaunchingWithOptions. Secondly, when the alarm data is modified. And lastly, all local notifications and timers are canceled when applicationDidEnterBackround: is called. So in this method I call the long running background method to set the final set of alarms. As of right now, I have not found a way to keep the alarms running in the background without removing all notification and setting new ones. The default of applicationDidEnterBackround: is to cancel all current tasks so any method called in here executes after all other live tasks are canceled. 
 
-For more details on on the fictionality of the application check out the code at GitHub repository [here](https://github.com/kiaraRobles/Cat-O-Clock/tree/master/Cat%20O'Clock)
-https://github.com/kiaraRobles/Cat-O-Clock). 
+For more details on on the fictionality of the application check out the code at GitHub repository [here](https://github.com/kiaraRobles/Cat-O-Clock/tree/master/Cat%20O'Clock).
