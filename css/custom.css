@@ -80,3 +80,12 @@ div.content.main {
 	background-position: center;
 	background-size: cover;
 }
+
+/* From: https://css-tricks.com/text-blocks-over-image/ */
+.cover-banner h1 {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    color: white;
+}
