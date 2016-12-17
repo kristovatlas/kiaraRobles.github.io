@@ -63,3 +63,20 @@ div.content.main {
   padding-bottom: 4px;
 }
 
+/* From: http://mattgemmell.com/cover-images/ */
+.cover-banner {
+	width: 100%;
+	height: 100vh;
+	max-height: 1067px;
+
+	position: relative;
+	top: -294px;
+	margin: 0 auto;
+	padding: 0;
+	overflow: visible;
+
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center;
+	background-size: cover;
+}
