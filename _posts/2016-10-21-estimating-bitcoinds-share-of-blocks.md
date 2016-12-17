@@ -8,7 +8,6 @@ header_text_color: "rbga(255, 255, 255, 1.0)"
 site_header_text_color: "rgba(105, 81, 62, 0.8)"
 site_header_border_color: "rgba(105, 81, 62, 0.5)"
 ---
----
 # How many wallets are using Bitcoin Core and its forks?
 
 [bitcoind](https://en.bitcoin.it/wiki/Bitcoind) is a daemon process that handles sending and receiving bitcoins for Bitcoin Core (formerly the "Satoshi client") and its various forks (XT, Classic, Unlimited). Some people who use bitcoind to manage their funds use [Bitcoin-Qt](https://en.bitcoin.it/w/index.php?title=Bitcoin_Core&amp;redirect=no) (sometimes also referred to as "Bitcoin Core"), a graphical interface for bitcoind available on many popular operating systems.
