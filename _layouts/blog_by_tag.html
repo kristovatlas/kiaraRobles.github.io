@@ -3,8 +3,7 @@ layout: default
 ---
 
 <header id="post-header">
-    <h1 id="post-title">{{ page.tag }}</h1>
-    <h4 id="post-subtitle">Articles by tag</h4>
+    <h1 id="post-title">{{ page.title }}</h1>
 </header>
 
 <div id="post-content">
@@ -14,7 +13,7 @@ layout: default
             {% if forloop.first %}
                 <h3>{{ post_year }}</h3><div class="list-group">
             {% endif %}
-			
+
             {% if forloop.first == false %}
                 {% assign previous_index = forloop.index0 | minus: 1 %}
                 {% capture previous_post_year %}{{ site.tags[page.tag][previous_index].date | date: '%Y' }}{% endcapture %}
@@ -22,7 +21,7 @@ layout: default
                     </div><h3>{{ post_year }}</h3><div class="list-group">
                 {% endif %}
             {% endif %}
-			
+
             <a href="{{ post.url }}/" class="list-group-item">
                 <h4 class="list-group-item-heading">{{ post.title }}</h4>
             </a>
