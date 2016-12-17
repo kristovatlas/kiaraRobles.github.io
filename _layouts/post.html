@@ -2,6 +2,14 @@
 layout: default
 ---
 
+<!-- from http://mattgemmell.com/cover-images/ -->
+<header
+{% if page.cover_image %}
+class="cover-banner"
+style="background-image: url({{ page.cover_image }});"
+{% endif %}
+>
+
 <div class="content article">
   {{ content }}
   <p>
