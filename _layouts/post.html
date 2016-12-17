@@ -8,6 +8,9 @@ layout: default
 class="cover-banner"
 style="background-image: url({{ page.cover_image }});"
 {% endif %}
+{% if page.title %}
+<h1 id="post-title">{{ page.title }}</h1>
+{% endif %}
 ></header>
 
 <div class="content article">
